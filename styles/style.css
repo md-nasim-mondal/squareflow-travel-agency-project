@@ -7,14 +7,18 @@
 body {
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
-/* From Here Header CSS Start */
+/* Primary Styles */
 
-header {
+header,
+main {
   max-width: 82%;
   margin: 0 auto;
 }
+
+/* Header Part Start */
 
 /* CSS Styles for navbar */
 
@@ -197,4 +201,114 @@ header .banner .banner-img-container {
 header .banner .banner-img-container img {
   width: 100%;
   height: 100%;
+}
+
+/* Main Part Start */
+
+main .services{
+  width: 100%;
+  z
+}
+
+main .services .services-header {
+  padding: 105px 0px 66px 0px;
+}
+
+main .services .services-header h5 {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main .services .services-header h2 {
+  color: #14183e;
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .services .services-card-container {
+  width: 100%;
+  /* margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 73px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .services .services-card-container .card {
+  width: 190px;
+  height: 227px;
+  flex-shrink: 0;
+  text-align: center;
+}
+main .services .services-card-container .best-flights-card {
+  width: 267px;
+  height: 314px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+  padding: 0 42px 45px 44px;
+  position: relative;
+}
+
+main .services .services-card-container .card h4 {
+  color: #1e1d4c;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 29px;
+  margin-bottom: 15px;
+}
+
+main .services .services-card-container .best-flights-card h4 {
+  color: #1e1d4c;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main .services .services-card-container .card p {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 10%;
+}
+
+main .services .services-card-container .best-flights-card p {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 10%;
+}
+
+main
+  .services
+  .services-card-container
+  .best-flights-card
+  .rectangle-container {
+    position: absolute;
+    left: -14%;
+    bottom: -12%;
+    z-index: -1;
 }
