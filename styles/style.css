@@ -157,6 +157,7 @@ header .banner .banner-content p {
 
 header .banner .banner-content .button-container {
   display: flex;
+  flex-wrap: wrap-reverse;
   gap: 24px;
   align-items: center;
 }
@@ -205,9 +206,8 @@ header .banner .banner-img-container img {
 
 /* Main Part Start */
 
-main .services{
+main .services {
   width: 100%;
-  z
 }
 
 main .services .services-header {
@@ -234,9 +234,9 @@ main .services .services-header h2 {
 
 main .services .services-card-container {
   width: 100%;
-  /* margin: auto; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 73px;
   align-items: center;
   justify-content: space-between;
@@ -307,8 +307,111 @@ main
   .services-card-container
   .best-flights-card
   .rectangle-container {
-    position: absolute;
-    left: -14%;
-    bottom: -12%;
-    z-index: -1;
+  position: absolute;
+  left: -14%;
+  bottom: -12%;
+  z-index: -1;
+}
+
+/* Top Destinations Section */
+
+main .top-destinations .top-destinations-header {
+  padding: 150px 0px 60px 0px;
+}
+
+main .top-destinations .top-destinations-header h5 {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main .top-destinations .top-destinations-header h2 {
+  color: #14183e;
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .top-destinations .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+main .top-destinations .card-container .card {
+  display: flex;
+  align-items: end;
+  width: 314px;
+  height: 457px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+}
+
+main .top-destinations .card-container .card1{
+  background: url("../assets/images/Rectangle-14.png") lightgray 50% / cover
+    no-repeat;
+}
+
+main .top-destinations .card-container .card2{
+  background: url("../assets/images/Rectangle-14(1).png") lightgray 50% / cover
+    no-repeat;
+}
+
+main .top-destinations .card-container .card3{
+  background: url("../assets/images/Rectangle-14(2).png") lightgray 50% / cover
+    no-repeat;
+}
+
+main .top-destinations .card-container .card .card-content {
+  width: 315px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 24px 24px;
+  background: #fff;
+  padding: 27px 25px 42px 20px;
+}
+
+main .top-destinations .card-container .card .card-content p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+}
+
+main .top-destinations .card-container .card .card-content h4 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 19px;
+}
+
+main
+  .top-destinations
+  .card-container
+  .card
+  .card-content
+  h4
+  .trip-duration-text {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 124.5%;
+  margin-bottom: 5px;
 }
