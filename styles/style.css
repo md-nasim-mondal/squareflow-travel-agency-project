@@ -13,7 +13,8 @@ body {
 /* Primary Styles */
 
 header,
-main {
+main,
+footer {
   max-width: 82%;
   margin: 0 auto;
 }
@@ -205,6 +206,16 @@ header .banner .banner-img-container img {
 }
 
 /* Main Part Start */
+
+main {
+  position: relative;
+}
+
+main .icon-group-4 {
+  position: absolute;
+  right: -10%;
+  top: 2.5%;
+}
 
 main .services {
   width: 100%;
@@ -588,4 +599,66 @@ main .subscribe .fly-icon {
   position: absolute;
   right: -1.5%;
   top: -6%;
-} 
+}
+
+/* footer section start  */
+
+footer section .footer-content-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+footer section .footer-content-container > div > h3 {
+  color: #181e4b;
+  font-family: Poppins;
+  font-size: 44px;
+  margin-bottom: 19px;
+}
+
+footer section .footer-content-container > div > p {
+  color: var(--TEXT-CLR, #5e6282);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%; /* 16.185px */
+}
+
+footer section .footer-content-container .content-card {
+  width: 108px;
+}
+
+footer section .footer-content-container .content-card > h4 {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 124.5%;
+  margin-bottom: 32px;
+}
+
+footer section .footer-content-container .content-card div p {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 124.5%;
+  margin-bottom: 12px;
+}
+
+footer section .footer-content-container .social-logo-container img {
+  width: 45px;
+  height: 45px;
+}
+
+footer section h6 {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 124.5%;
+  padding: 80px 0px ;
+}
