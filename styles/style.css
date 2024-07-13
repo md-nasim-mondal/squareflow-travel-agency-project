@@ -425,7 +425,7 @@ main .testimonials {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10%;
-  padding: 200px 48px 200px 0px;
+  padding: 200px 48px 173px 0px;
 }
 
 main .testimonials .testimonials-header {
@@ -511,14 +511,81 @@ main .logo-container {
   gap: 10px;
 }
 
-main .logo-container div{
+main .logo-container div {
   height: 162px;
   padding: 0px 3px;
   display: flex;
   align-items: center;
-
 }
 
 main .logo-container div img {
   width: 162px;
 }
+
+/* Subscribe section */
+
+main .subscribe {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 78px 155px;
+  border-radius: 129px 20px 20px 20px;
+  /* opacity: 0.2; */
+  background: #dfd7f933;
+  text-align: center;
+  position: relative;
+  margin: 124px 0px 150px 0px;
+}
+
+main .subscribe > div > h3 {
+  color: #5e6282;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+main .subscribe > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 74px;
+}
+
+main .subscribe > div > div .input-field {
+  width: 421px;
+  height: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+main .subscribe > div > div .input-field input {
+  flex: 1 1 0%;
+  border-radius: 6px;
+  padding: 4px;
+  border: none;
+}
+
+main .subscribe > div > div button {
+  color: #fff;
+  width: 180px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border: none;
+}
+
+main .subscribe .fly-icon {
+  position: absolute;
+  right: -1.5%;
+  top: -6%;
+} 
