@@ -427,7 +427,135 @@ main
   margin-bottom: 5px;
 }
 
-/* Next Trip Section */
+/* Book Your Next Trip Section */
+
+main .book-trip {
+  display: flex;
+  margin-top: 186px;
+  align-items: center;
+}
+
+main .book-trip .book-trip-content h6 {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main .book-trip .book-trip-content h2 {
+  color: #14183e;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .book-trip .book-trip-content .content-card {
+  width: 60%;
+  display: flex;
+  gap: 21px;
+  margin-top: 48px;
+}
+
+main .book-trip .book-trip-content .content-card > div > h5 {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 124.5%;
+  margin-bottom: 4px;
+}
+
+main .book-trip .book-trip-content .content-card > div > p {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 124.5%;
+}
+
+main .book-trip .book-trip-card-side {
+  width: 50%;
+}
+
+main .book-trip .book-trip-card-side .trip-card {
+  width: 350px;
+  padding: 20px 24px 31px 25px;
+  margin: auto;
+  flex-shrink: 0;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+main .book-trip .book-trip-card-side .trip-card h3 {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 124.5%;
+  letter-spacing: 0.27px;
+  margin-top: 26px;
+}
+
+main .book-trip .book-trip-card-side .trip-card p {
+  display: flex;
+  gap: 15px;
+  margin-top: 26px;
+}
+
+main .book-trip .book-trip-card-side .trip-card .trip-logo-container {
+  justify-content: space-between;
+}
+
+main .book-trip .book-trip-card-side .trip-card p span {
+  color: #84829a;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.08px;
+}
+
+main .book-trip .book-trip-card-side .trip-card p span img {
+  margin-right: 15px;
+}
+
+main .book-trip .book-trip-card-side .trip-card .mini-card {
+  width: 250px;
+  height: 129px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  right: -27.5%;
+  top: 56%;
+}
+
+main .book-trip .book-trip-card-side .trip-card .color-container {
+  width: 354px;
+  height: 367px;
+  flex-shrink: 0;
+  border-radius: 367px;
+  opacity: 0.8;
+  background: #59b1e6;
+  filter: blur(75px);
+  position: absolute;
+  top: -15%;
+  right: -15%;
+  z-index: -1;
+}
 
 /* Testimonials Section */
 
@@ -473,14 +601,13 @@ main .testimonials .testimonials-card-container .testimonial-card {
   padding: 34px 48px 34px 34px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--white, #fff);
+  background: #fff;
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
     0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
     0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
-
   position: relative;
 }
 
@@ -625,7 +752,7 @@ footer section .footer-content-container > div > p {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 124.5%; /* 16.185px */
+  line-height: 124.5%;
 }
 
 footer section .footer-content-container .content-card {
@@ -660,5 +787,5 @@ footer section h6 {
   font-family: Poppins;
   font-size: 14px;
   line-height: 124.5%;
-  padding: 80px 0px ;
+  padding: 80px 0px;
 }
