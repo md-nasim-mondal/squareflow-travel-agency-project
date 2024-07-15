@@ -6,35 +6,61 @@
     <title>Document</title>
     <!-- Link With CSS Style -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
     <header>
       <!-- navbar start -->
       <nav>
-        <div class="nav-logo">Logo</div>
-        <div class="nav-center">
-          <ul class="nav-list-container1">
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Hotels</a></li>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Bookings</a></li>
-          </ul>
-        </div>
-        <div class="nav-end">
-          <ul class="nav-list-container2">
-            <li><a href="#">Login</a></li>
-            <li>
-              <a href="#"><button>Sign up</button></a>
-            </li>
-            <li>
-              <a href=""
-                >EN
-                <select></select
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="nav-logo">Logo</div>
+      <div id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-center">
+        <ul class="nav-list-container1">
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Bookings</a></li>
+        </ul>
+      </div>
+      <div class="nav-end">
+        <ul class="nav-list-container2">
+          <li><a href="#">Login</a></li>
+          <li>
+            <a href="#"><button>Sign up</button></a>
+          </li>
+          <li>
+            <select>
+                <option value="English">EN</option>
+                <option value="Bangla">BN</option>
+              </select>
+          </li>
+        </ul>
+      </div>
+      <div id="menu">
+        <ul id="menu-items" class="menu-items-container-closed">
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Bookings</a></li>
+          <li><a href="#">Login</a></li>
+          <div>
+            <li><button>Sign up</button></li>
+          <br>
+          <li>
+              <select>
+                <option value="English">EN</option>
+                <option value="Bangla">BN</option>
+              </select>
+            </a>
+          </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
       <!-- navbar end -->
 
       <!-- banner section start -->
@@ -242,6 +268,7 @@
             <div class="color-container">
             </div>
           </div>
+          <div class="mini-card-1"><img src="./assets/images/Group-44.png" alt="trip-mini-card"></div>
         </div>
       </section>
 
@@ -346,5 +373,6 @@
         <h6>All rights reserved@jadoo.co</h6>
       </section>
     </footer>
+    <script src="/scripts/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,188 @@
+/* Responsive Styles */
+
+/* For Tablet */
+@media (max-width: 1024px) {
+  /* navbar  */
+  #nav-toggle {
+    display: block;
+  }
+
+  .nav-center,
+  .nav-end {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80%;
+  }
+
+  .nav-center,
+  .nav-end {
+    display: none;
+  }
+
+  /* banner section */
+  header .banner {
+  flex-direction: column-reverse;
+  }
+  header .banner .banner-content{
+  width: 100%;
+  text-align: center;
+  }
+  header .banner .banner-img-container {
+  width: 100%;
+}
+
+header .banner .banner-content .button-container {
+  justify-content: center;
+}
+
+/* main section start */
+
+/* services section */
+main .services .services-card-container {
+  justify-content: center;
+}
+
+/* destinations section */
+
+main .top-destinations .card-container {
+  justify-content: center;
+}
+
+main .book-trip {
+  flex-direction: column-reverse;
+}
+
+main .book-trip .book-trip-content{
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main .book-trip .book-trip-content .content-card {
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+
+main .book-trip .book-trip-card-side{
+  width: 100%;
+}
+
+/* Testimonials */
+  main .testimonials {
+    flex-direction: column;
+}
+
+main .testimonials .testimonials-header {
+  width: 100%;
+  text-align: center;
+}
+
+main .testimonials .testimonials-card-container {
+  width: 100%;
+}
+
+main .testimonials .testimonials-card-container .testimonial-card{
+  margin: auto;
+}
+
+}
+
+@media (max-width: 768px){
+
+  /* BANNER SECTION */
+  header .banner .banner-content h1{
+  font-size: 40px;
+  line-height: 89px;
+  }
+
+  .mini-card{
+  display: none;
+  }
+  .book-trip-card-side{
+    width: 100%;
+  }
+
+
+  /* TESTIMONIAL SECTION */
+
+  main .testimonials .testimonials-card-container .testimonial-card{
+    width: 300px;
+    height: auto;
+    padding: 50px 10px 20px 10px;
+  }
+
+  /* book trip section */
+
+  main .book-trip .book-trip-card-side .trip-card > img {
+    width: 270px;
+  }
+
+  main .book-trip .book-trip-card-side .trip-card{
+    width: 320px;
+  }
+
+  .mini-card-1{
+  display: flex;
+  width: 250px;
+  height: 129px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* subscribe section */
+
+  main .subscribe  {
+  padding: 20px;
+  width: 318px;
+  height: 500px;
+}
+
+main .subscribe > div > h3 {
+  color: #5e6282;
+  text-align: center;
+  font-size: 20px;
+  line-height: normal;
+  padding-top: 100px;
+}
+
+main .subscribe > div > div .input-field {
+  width: 300px;
+  height: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+footer{
+  text-align: center;
+}
+
+footer section .footer-content-container{
+  align-items: center;
+  justify-content: center;
+}
+
+  
+}
+

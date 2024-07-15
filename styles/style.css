@@ -23,25 +23,25 @@ footer {
 
 /* CSS Styles for navbar */
 
+/* Basic navbar styling */
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 49px;
   padding-bottom: 18px;
+  position: relative;
 }
 
 /* navbar start */
-
 header nav .nav-logo {
-  width: 25%;
+  width: 20%;
   color: #131318;
   font-size: 32px;
   font-weight: 800;
 }
 
 /* navbar center */
-
 header nav .nav-center {
   flex: 1;
 }
@@ -63,23 +63,25 @@ header nav .nav-center .nav-list-container1 li a {
   color: #212832;
   font-size: 17px;
   font-weight: 400;
+  padding-right: 16px;
 }
 
 /* navbar end */
-
 header nav .nav-end {
-  width: 40%;
-  padding-left: 12%;
+  width: 35%;
 }
 
 header nav .nav-end .nav-list-container2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+  gap: 16px;
 }
 
 header nav .nav-end .nav-list-container2,
-header nav .nav-end .nav-list-container2 li a {
+header nav .nav-end .nav-list-container2 li a,
+.menu-items-container-show,
+.menu-items-container-show li a {
   list-style: none;
   text-decoration: none;
 }
@@ -88,9 +90,64 @@ header nav .nav-end .nav-list-container2 li a {
   color: #212832;
   font-size: 17px;
   font-weight: 500px;
+  padding-right: 8px;
 }
 
-header nav .nav-list-container2 li button {
+#nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-items-container-show,
+.menu-items-container-show li a {
+  color: #212832;
+  font-size: 17px;
+  font-weight: 500px;
+}
+
+#menu-items.menu-items-container-closed {
+  display: none;
+}
+
+#menu-items.menu-items-container-show {
+  display: block;
+}
+
+.menu-items-container-show {
+  padding: 20px 16px;
+  border: 1px solid #212832;
+  border-radius: 5px;
+}
+
+.menu-items-container-show > li {
+  padding: 3px 16px;
+  background: transparent;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.menu-items-container-show div {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.menu-items-container-show div li a {
+  padding: 3px 16px;
+  background: transparent;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+select {
+  border: none;
+}
+
+header nav .nav-list-container2 li button,
+.menu-items-container-show button {
   padding: 9px 21px;
   border: 1px solid #212832;
   border-radius: 5px;
@@ -130,25 +187,6 @@ header .banner .banner-content h1 {
   letter-spacing: -3.36px;
   margin: 24px 0 30px 0;
 }
-
-/* header .banner .banner-content h1 span {
-  position: relative;
-  display: inline-block;
-}
-
-header .banner .banner-content h1 span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 20px; 
-  width: 100%;
-  background: url("https://i.imgur.com/4nHcdjQ.png") no-repeat; 
-  background-size: cover;
-  z-index: -1;
-  transform: translateY(5px);
-} */
-
 header .banner .banner-content p {
   color: #5e6282;
   font-family: Poppins;
@@ -541,6 +579,10 @@ main .book-trip .book-trip-card-side .trip-card .mini-card {
   z-index: 1;
   right: -27.5%;
   top: 56%;
+}
+
+.mini-card-1{
+  display: none;
 }
 
 main .book-trip .book-trip-card-side .trip-card .color-container {
