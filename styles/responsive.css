@@ -145,6 +145,14 @@ main .testimonials .testimonials-card-container .testimonial-card{
     margin-right: auto;
   }
 
+  /* logo section */
+
+  .logo-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* subscribe section */
 
   main .subscribe  {
